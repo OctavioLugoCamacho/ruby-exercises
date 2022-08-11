@@ -1,2 +1,2 @@
-# ruby-exercises
-:diamonds: Advent of Code 2015 in Ruby
+# ADVENT OF CODE 2015
+## RUBY
