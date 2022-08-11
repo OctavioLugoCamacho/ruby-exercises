@@ -20,10 +20,27 @@ class Paper
     return totalPaper.sum
   end
 
+  def day2b
+    totalRibbon = []
+    @paper.each do |p|
+      dimensions = p.split('x')
+      l = p.split('x')[0].to_i
+      w = p.split('x')[1].to_i
+      h = p.split('x')[2].to_i
+      d = [l,w,h]
+      ribbon = l * w * h
+      extraRibbon = (2 * d.sort[0].to_i) + (2 * d.sort[1].to_i)
+      total = ribbon + extraRibbon
+      totalRibbon << total
+    end
+    return totalRibbon.sum
+  end
+
 end
 
 file = []
 File.foreach("paper.txt") { |line| file << line }
 paper1 = Paper.new(file)
 puts paper1.day2a
+puts paper1.day2b
 
