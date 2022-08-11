@@ -6,13 +6,15 @@ class Directions
   end
 
   def day1a
-    @steps.split('').each { |s| s == '(' ? @floor += 1 : @floor -= 1 }
+    @steps.each do |s|
+      s == '(' ? @floor += 1 : @floor -= 1
+    end
     return @floor
   end
 
   def day1b
     position = []
-    @steps.split('').each_with_index do |s, idx|
+    @steps.each_with_index do |s, idx|
       s == '(' ? @floor += 1 : @floor -= 1
       if @floor == -1
         position << idx + 1
@@ -22,3 +24,9 @@ class Directions
   end
 
 end
+
+file = File.read("directions.txt").split('')
+file.pop
+direction = Directions.new(file, 0)
+direction.day1a
+direction.day1b
