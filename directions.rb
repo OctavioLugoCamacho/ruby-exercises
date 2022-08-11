@@ -27,6 +27,7 @@ end
 
 file = File.read("directions.txt").split('')
 file.pop
-direction = Directions.new(file, 0)
-direction.day1a
-direction.day1b
+direction1 = Directions.new(file, 0)
+direction2 = Directions.new(file, 0)
+puts direction1.day1a
+puts direction2.day1b
