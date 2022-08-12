@@ -25,4 +25,28 @@ describe Coordinates do
     coordinates.day3a.should == 2
   end
 
+  it "delivers presents to 3 houses" do
+    steps = "^v".split('')
+    position = [[0,0]]
+    coordinates = Coordinates.new(steps, position)
+
+    coordinates.day3b.should == 3
+  end
+
+  it "now delivers presents to 3 houses" do
+    steps = "^>v<".split('')
+    position = [[0,0]]
+    coordinates = Coordinates.new(steps, position)
+
+    coordinates.day3b.should == 3
+  end
+
+  it "now delivers presents to 11 houses" do
+    steps = "^v^v^v^v^v".split('')
+    position = [[0,0]]
+    coordinates = Coordinates.new(steps, position)
+
+    coordinates.day3b.should == 11
+  end
+
 end

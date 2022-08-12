@@ -2,3 +2,4 @@
 ## RUBY
 - Day 1 is directions.rb
 - Day 2 is paper.rb
+- Day 3 is coordinates.rb
