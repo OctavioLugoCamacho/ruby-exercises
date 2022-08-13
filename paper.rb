@@ -40,7 +40,7 @@ end
 
 file = []
 File.foreach("paper.txt") { |line| file << line }
-paper1 = Paper.new(file)
-puts paper1.day2a
-puts paper1.day2b
+paper = Paper.new(file)
+puts paper.day2a
+puts paper.day2b
 
