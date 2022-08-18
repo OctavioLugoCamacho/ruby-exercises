@@ -25,9 +25,11 @@ class Directions
 
 end
 
-file = File.read("directions.txt").split('')
-file.pop
-direction1 = Directions.new(file, 0)
-direction2 = Directions.new(file, 0)
-puts direction1.day1a
-puts direction2.day1b
+if __FILE__ == $0
+  file = File.read("directions.txt").split('')
+  file.pop
+  direction1 = Directions.new(file, 0)
+  direction2 = Directions.new(file, 0)
+  puts direction1.day1a
+  puts direction2.day1b
+end

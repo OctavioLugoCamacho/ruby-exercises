@@ -56,7 +56,9 @@ class Strings
 
 end
 
-file = []
-File.foreach("strings.txt") { |line| file << line }
-string = Strings.new(file, 0)
-puts string.day5a
+if __FILE__ == $0
+  file = []
+  File.foreach("strings.txt") { |line| file << line }
+  string = Strings.new(file, 0)
+  puts string.day5a
+end

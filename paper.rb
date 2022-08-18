@@ -38,9 +38,10 @@ class Paper
 
 end
 
-file = []
-File.foreach("paper.txt") { |line| file << line }
-paper = Paper.new(file)
-puts paper.day2a
-puts paper.day2b
-
+if __FILE__ == $0
+  file = []
+  File.foreach("paper.txt") { |line| file << line }
+  paper = Paper.new(file)
+  puts paper.day2a
+  puts paper.day2b
+end

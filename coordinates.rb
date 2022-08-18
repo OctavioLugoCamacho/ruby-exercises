@@ -51,12 +51,13 @@ class Coordinates
 
 end
 
-file = File.read("coordinates.txt").split('')
-file.pop
-position = [[0,0]]
-coordinates = Coordinates.new(file, position)
-puts coordinates.day3a
+if __FILE__ == $0
+  file = File.read("coordinates.txt").split('')
+  file.pop
+  position = [[0,0]]
+  coordinates = Coordinates.new(file, position)
+  puts coordinates.day3a
 
-coordinates1 = Coordinates.new(file, position)
-puts coordinates1.day3b
-
+  coordinates1 = Coordinates.new(file, position)
+  puts coordinates1.day3b
+end
