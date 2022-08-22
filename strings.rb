@@ -16,6 +16,41 @@ class Strings
     return @count
   end
 
+  def day5b
+    @strings.each do |s|
+      pairs = pair(s)
+      between_result = between(s)
+      if pairs > 0 && between_result > 0
+        @count += 1
+      end
+    end
+    return @count
+  end
+
+  def pair(s)
+    pairs = 0
+    string = s.split('')
+    for i in 0..string.size() - 4
+      for j in i + 2..string.size() - 2
+        if string[i] == string[j] && string[i + 1] == string[j + 1]
+          pairs += 1
+        end
+      end
+    end
+    return pairs
+  end
+
+  def between(s)
+    betweens = 0
+    string = s.split('')
+    for i in 0..string.size() - 3
+      if string[i] == string[i + 2]
+        betweens += 1
+      end
+    end
+    return betweens
+  end
+
   def vowel(s)
     count_vowels = 0
     vowels = s.split('')
@@ -59,6 +94,8 @@ end
 if __FILE__ == $0
   file = []
   File.foreach("strings.txt") { |line| file << line }
-  string = Strings.new(file, 0)
-  puts string.day5a
+  string1 = Strings.new(file, 0)
+  string2 = Strings.new(file, 0)
+  puts string1.day5a
+  puts string2.day5b
 end
