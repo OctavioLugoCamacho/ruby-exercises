@@ -1,5 +1,4 @@
 class Coordinates
-
   def initialize(steps, position)
     @steps = steps
     @position = position
@@ -48,7 +47,6 @@ class Coordinates
     end
     return @position.uniq.size
   end
-
 end
 
 if __FILE__ == $0

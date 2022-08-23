@@ -1,7 +1,6 @@
 require 'digest'
 
 class Secret
-
   def initialize(key)
     @key = key
   end
@@ -33,6 +32,5 @@ class Secret
       end
     end
   end
-
 end
 

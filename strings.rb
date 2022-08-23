@@ -1,5 +1,4 @@
 class Strings
-
   def initialize(strings, count)
     @strings = strings
     @count = count
@@ -88,7 +87,6 @@ class Strings
     result << bad_twice
     return result
   end
-
 end
 
 if __FILE__ == $0

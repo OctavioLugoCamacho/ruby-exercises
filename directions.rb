@@ -1,5 +1,4 @@
 class Directions
-
   def initialize(steps, floor)
     @steps = steps
     @floor = floor
@@ -22,7 +21,6 @@ class Directions
     end
     return position.first
   end
-
 end
 
 if __FILE__ == $0
