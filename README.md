@@ -5,4 +5,5 @@
 - Day 3 is coordinates.rb
 - Day 4 is secret.rb
 - Day 5 is strings.rb
+- Day 6 is lights.rb
 
