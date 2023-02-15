@@ -1,4 +1,4 @@
-require_relative 'coordinates'
+require './lib/coordinates'
 
 describe Coordinates do
   it "delivers presents to 2 houses" do

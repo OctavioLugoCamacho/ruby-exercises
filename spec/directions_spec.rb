@@ -1,4 +1,4 @@
-require_relative 'directions'
+require './lib/directions'
 
 describe Directions do
   it "is at floor 0" do

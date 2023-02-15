@@ -1,4 +1,4 @@
-require_relative 'strings'
+require './lib/strings'
 
 describe Strings do
   it "is nice when is ugknbfddgicrmopn" do

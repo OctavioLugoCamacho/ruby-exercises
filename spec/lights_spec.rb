@@ -1,4 +1,4 @@
-require_relative 'lights'
+require './lib/lights'
 
 describe Lights do
   it "would turn on every light" do

@@ -1,4 +1,4 @@
-require_relative 'paper'
+require './lib/paper'
 
 describe Paper do
   it "needs 58 square feet" do
